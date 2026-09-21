@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokedex</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/pokemons.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+	<header>
+		<div class="topo"></div>
+		<div class="BarraSup">
+			<div class="espaco"></div>
+			<div class="caixa-logoTitulo">
+				<div class="logo">
+				</div>
+				<div class="titulo">
+					<h1>Pokedex</h1>
+				</div>
+			</div>
+			<div>
+				<input class="barraPesquisa" type="text" placeholder="Digite o nome do pokemon...">
+			</div>
+			<div>
+			</div>
+		</div>
+		<div class="divisor"></div>
+		<div class="BarraInf">
+			<button class="botaoBarra" type="button">Pesquisar</button>
+			<button class="botaoBarra" type="button">MinhaDex</button>
+			<button class="botaoBarra" type="button">Favoritos</button>
+		</div>
+		<div class="embaixo"></div>
+	</header>
+
+    <div class="filtro-tipos">
+        <button class="filtro-tipo ativo" data-tipo="all">ALL</button>
+        <button class="filtro-tipo" data-tipo="electric">ELECTRIC</button>
+        <button class="filtro-tipo" data-tipo="fire">FIRE</button>
+        <button class="filtro-tipo" data-tipo="flying">FLYING</button>
+        <button class="filtro-tipo" data-tipo="grass">GRASS</button>
+        <button class="filtro-tipo" data-tipo="poison">POISON</button>
+        <button class="filtro-tipo" data-tipo="water">WATER</button>
+        <button class="filtro-tipo" data-tipo="ghost">GHOST</button>
+    </div>
+
+    <section class="listagem">
+        <div class="pokemon-grid">
+
+        </div>
+    </section>
+    <div class="barraDecorativa"></div>
+    <footer>
+	    <div class="github">
+	    <p>Referencias</p>
+	    <a href="https://github.com/felipegabriel0324-cmyk/Estrutura-HTML-da-pokedex" target="_blank">@Github</a>
+	    </div>
+	    <h1>©Pokedex</h1>
+    </footer>
+    <script src="js/pokemons.js"></script>
+    <script src="js/listarPokemons.js"></script>
+    <script src="js/filtroTipos.js"></script>
+    <script src="js/pokemonsFavoritos.js"></script>
+</body>
+</html>

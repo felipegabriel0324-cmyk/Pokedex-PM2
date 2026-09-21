@@ -1,0 +1,140 @@
+.topo {
+	width: 100%;
+	height:6px;
+	background-image:url("../images/topo.svg");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.embaixo {
+	width: 100%;
+	height:4px;
+	background-image:url("../images/embaixo.svg");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.BarraSup {
+	height:80px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	background-image:url("../images/BarraSup.svg");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.espaco {
+	margin-left:-200px;
+}
+.caixa-logoTitulo {
+	display:flex;
+	flex-direction:row;
+}
+.titulo {
+	font-family:fantasy;
+	color: rgb(255, 255, 255);
+	font-size: clamp(0.65rem, 2.5vw, 0.9rem);
+	letter-spacing: 0.10em;
+	line-height: 1.8;
+}
+.logo {
+	margin-top:5px;
+	width:70px;
+	height:70px;
+	background-image:url("../images/logo.svg");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.barraPesquisa {
+    margin-top: 20px;
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 36px;
+
+    padding: 0 15px;
+
+    border: 2px solid #ff3232;
+    border-radius: 30px;
+
+    background-color: #d50000;
+    color: #cacaca;
+
+    outline: none;
+}
+.barraPesquisa::placeholder {
+    color: #a6a6a6;
+    font-size: 14px;
+    font-style: italic;
+	 font-weight: 600;
+}
+.barraPesquisa:focus {
+    border-color: #ff2525;
+    box-shadow: 0 0 5px rgba(255, 37, 37, 0.5);
+}
+
+
+.BarraInf {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+
+
+    padding-left: 100px;
+
+    background-image:
+    linear-gradient(#fd0000, #fd0000),
+    url("../images/BarraInf.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.BarraInf::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 90px;
+    right: 90px;
+	border-radius: 50px;
+    border-top: 2px solid #ff2525;
+	z-index: 10;
+}
+
+
+.botaoBarra {
+    width: 80px;
+    height: 50px;
+    border: none;
+
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+
+    background-color: #fd0000;
+    color: #d7d5d5;
+
+	position: relative;
+}
+.botaoBarra::after {
+    content: "";
+
+    position: absolute;
+    bottom: 5px;
+    left: 6px;
+    right: 6px;
+
+    height: 2px;
+    background-color: #cf0000;
+    border-radius: 25px;
+}
+.botaoBarra:hover {
+	color: #ffffff;
+    background-color: #db0000;
+}
